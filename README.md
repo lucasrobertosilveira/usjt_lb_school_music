@@ -2,6 +2,6 @@
 
 # Integrantes do projeto:
 
-Breno Lopes Fermino - 
-Gustavo Henrique Gattas Rosa - 82120211
-Lucas Roberto Silveira - 822223970
+<h1>Breno Lopes Fermino - </h1>
+<h2>Gustavo Henrique Gattas Rosa - 82120211</h2>
+<h3>Lucas Roberto Silveira - 822223970</h3>
