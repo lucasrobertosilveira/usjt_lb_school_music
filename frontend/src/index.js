@@ -6,6 +6,7 @@ import { createGlobalStyle } from 'styled-components'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Header from './componentes/Header'
 import Instrumentos from './rotas/Instrumentos';
+import Aulas from './rotas/Aulas';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -38,6 +39,7 @@ root.render(
       <Routes>
         <Route path="/instrumentos" element={<Instrumentos/>} />
         <Route path="/" element={<Home />} />
+        <Route path="/aulas" element={<Aulas />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

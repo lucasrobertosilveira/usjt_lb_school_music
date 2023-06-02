@@ -4,6 +4,8 @@ import { instrumentos } from '../componentes/Pesquisa/dadosPesquisa'
 import UltimosLancamentos from '../componentes/UltimosLancamentos'
 import styled from 'styled-components'
 import PaginaInicial from '../componentes/Home'
+import { ListaInstrumentos } from '../componentes/Instrumentos'
+import { ListaInstrumentosContainer } from '../componentes/Instrumentos'
 
 const AppContainer = styled.div`
     width: 100vw;
@@ -14,9 +16,12 @@ const AppContainer = styled.div`
 function Instrumentos() {
   return (
     <div>
-    <AppContainer>
-      <Pesquisa />
-    </AppContainer>
+      <AppContainer>
+        <Pesquisa />
+        <ListaInstrumentosContainer>
+          <ListaInstrumentos />
+        </ListaInstrumentosContainer>
+      </AppContainer>
     </div>
   );
 }

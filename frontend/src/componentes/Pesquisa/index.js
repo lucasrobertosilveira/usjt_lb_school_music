@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { useState } from 'react'
 import { getInstrumentos } from '../../servicos/instrumentos'
 import { useEffect } from 'react'
+import { instrumentosArray } from './dadosPesquisa'
 
 const PesquisaContainer = styled.section`
     background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
@@ -54,9 +55,15 @@ function Pesquisa() {
         fetchInstrumentos()
     }, [])
 
+    /* useEffect(() => {
+        setInstrumentos(instrumentosPesquisados)
+    }, [instrumentosPesquisados]) */
+
     async function fetchInstrumentos() {
-        const instrumentosDaAPI = await getInstrumentos()
+        /* const instrumentosDaAPI = await getInstrumentos() */
+        const instrumentosDaAPI = instrumentosArray
         setInstrumentos(instrumentosDaAPI)
+    
     }
 
     return (

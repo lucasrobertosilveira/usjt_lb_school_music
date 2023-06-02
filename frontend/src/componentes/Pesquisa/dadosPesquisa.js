@@ -1,6 +1,6 @@
 import instrumento from '../../imagens/instrumento.png'
 
-export const instrumentos = [
+export const instrumentosArray = [
     {nome: 'Liderança em Design', id: 1, src:instrumento},
     {nome: 'Liderança em UX', id: 1, src:instrumento},
     {nome: 'JavaScript Assertivo', id: 2, src:instrumento},
