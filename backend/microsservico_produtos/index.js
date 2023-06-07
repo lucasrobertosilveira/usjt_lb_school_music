@@ -3,11 +3,15 @@ const app = express();
 const microsservico_produtos = {}
 
 app.get ('/microsservico_produtos', (req, res) => {
+  res.send(microsservico_produtos)
+})
+
+app.patch ('/', (req, res) => {
 
 })
 
-app.put ('/microsservico_produtos', (req, res) => {
-
+app.delete('/', (req, res) => {
+  
 })
 
 const port = 7000
