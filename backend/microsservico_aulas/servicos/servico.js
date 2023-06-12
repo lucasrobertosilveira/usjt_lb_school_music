@@ -11,14 +11,6 @@ function getServicoPorId(id) {
   return servicoFiltrado
 }
 
-function insereServico(servicoNovo) {
-  const servicos = JSON.parse(fs.readFileSync("servicos.json"))
-
-  const novaListaDeServicos = [...servicos, servicoNovo]
-
-  fs.writeFileSync("servicos.json", JSON.stringify(novaListaDeServicos))
-}
-
 function modificaServico(modificacoes, id) {
   let servicosAtuais = JSON.parse(fs.readFileSync("servicos.json"))
   const indiceModificado = servicosAtuais.findIndex(servico => servico.id === id)
@@ -40,7 +32,6 @@ function deletaServicoPorId(id) {
 module.exports = {
   getTodosServicos,
   getServicoPorId,
-  insereServico,
   modificaServico,
   deletaServicoPorId
 }

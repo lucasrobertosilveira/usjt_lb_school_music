@@ -21,18 +21,6 @@ function getServico (req, res) {
   }
 }
 
-function postServico (req, res) {
-  try {
-    const servicoNovo = req.body
-    insereServico(servicoNovo)
-    res.status(201)
-    res.send("Serviço inserido com sucesso")
-  } catch (error) {
-    res.status(500)
-    res.send(error.message)
-  }
-}
-
 function patchServico (req, res) {
   try {
     const id = req.params.id
@@ -59,8 +47,7 @@ function deleteServico (req, res) {
 
 module.exports = {
   getServicos,
-  getServico,
-  postServico, 
+  getServico, 
   patchServico,
   deleteServico
 }
